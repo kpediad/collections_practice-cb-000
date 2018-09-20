@@ -34,3 +34,7 @@ end
 def sum_array(array)
   array.inject(:+)
 end
+
+def add_s(array)
+  array.collect.with_index {|str, i| str << "s" unless i == 1}
+end
